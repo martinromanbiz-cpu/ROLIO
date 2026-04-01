@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROLIO | Exkluzivní Databáze</title>
+    <title>ROLIO | Ultimátní Katalog (300 Profesí)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .prof-list li { display: flex; justify-content: space-between; padding: 0.5rem; border-bottom: 1px solid #f1f5f9; transition: background 0.2s; }
+        .prof-list li:hover { background: #f8fafc; border-radius: 0.5rem; }
+        .prof-name { font-weight: 700; color: #1e293b; }
+        .prof-price { font-weight: 900; color: #94a3b8; font-size: 0.875rem; }
+        .vip-name { font-weight: 900; color: #4f46e5; }
+        .vip-price { font-weight: 900; color: #1e293b; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-900 font-['Inter']">
 
     <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 p-4 shadow-sm">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <a href="index.html" class="flex items-center gap-4">
-                <img src="rolio.jpg" alt="ROLIO Logo" class="h-12 w-auto rounded-xl shadow-md border border-slate-100">
+                <img src="rolio.png" alt="ROLIO Logo" class="h-12 w-auto rounded-xl shadow-md border border-slate-100">
                 <span class="text-3xl font-black tracking-tighter text-slate-900">ROLIO<span class="text-blue-600">.</span></span>
             </a>
             <div class="hidden md:flex space-x-8 font-bold text-slate-500 uppercase tracking-widest text-sm">
-                <a href="sluzby.html" class="text-blue-600 transition">Exkluzivní databáze</a>
+                <a href="sluzby.html" class="text-blue-600 transition">Exkluzivní databáze (300)</a>
                 <a href="tym.html" class="hover:text-blue-600 transition">Vedení firmy</a>
                 <a href="kontakt.html" class="hover:text-blue-600 transition">Kontakt</a>
             </div>
@@ -24,34 +32,328 @@
     </nav>
 
     <section class="py-16 px-6 max-w-7xl mx-auto text-center">
-        <h1 class="text-5xl font-black mb-4 uppercase">Katalog <span class="text-blue-600">příležitostí</span></h1>
-        <p class="text-xl text-slate-500">Prémiové portfolio profesí připravených k okamžitému vyzkoušení.</p>
+        <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tighter">Katalog <span class="text-blue-600">300 Osobností</span></h1>
+        <p class="text-xl text-slate-500 max-w-3xl mx-auto">Masivní databáze přesně 300 exkluzivních rolí. Od korporátu až po absolutní brainrot. Tonda to sice nepochopí, ale ty si vybereš.</p>
     </section>
 
-    <section class="pb-24 px-6 max-w-5xl mx-auto">
-        <div class="bg-white p-10 rounded-[2rem] shadow-2xl border border-slate-100">
+    <section class="pb-24 px-6 max-w-[90rem] mx-auto">
+        <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-8">
             
-            <h2 class="text-2xl font-black text-slate-800 mb-6 border-b border-slate-200 pb-4 uppercase tracking-widest">A - E</h2>
-            <ul class="space-y-3 mb-12">
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg">AI Prompt Engineer</span> <span class="font-black text-slate-400">Na vyžádání</span></li>
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg">Architekt (Studio)</span> <span class="font-black text-slate-400">Na vyžádání</span></li>
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg">Bankéř (Wall Street)</span> <span class="font-black text-slate-400">Na vyžádání</span></li>
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg text-blue-600">E-girl / E-boy manažer</span> <span class="font-black text-slate-900">Dostupné</span></li>
+            <ul class="prof-list text-sm">
+                <li><span class="prof-name">Advokát (Trestní právo)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Advokát (Rozvody)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">AI Prompt Engineer</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">AI Etik (Filozof)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Akrobat (Cirkus)</span> <span class="prof-price">3 990 Kč</span></li>
+                <li><span class="prof-name">Analytik (Big Data)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Animátor (3D/Pixar)</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Archeolog (Egypt)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Architekt (Mrakodrapy)</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Architekt (Interiéry)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">ASMR Artist (Pro)</span> <span class="prof-price">3 490 Kč</span></li>
+                <li><span class="prof-name">Astrofyzik (NASA)</span> <span class="prof-price">15 990 Kč</span></li>
+                <li><span class="prof-name">Astronom (Observatoř)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Auditor (KPMG/Deloitte)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Automechanik (Formule 1)</span> <span class="prof-price">18 990 Kč</span></li>
+                <li><span class="prof-name">Automechanik (Veteráni)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Bagrista (Těžba zlata)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Bagrista (Demolice)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Bankéř (Investiční)</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Bankéř (Privátní VIP)</span> <span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Barista (Výběrová káva)</span> <span class="prof-price">2 990 Kč</span></li>
+                <li><span class="prof-name">Barman (Speakeasy klub)</span> <span class="prof-price">3 990 Kč</span></li>
+                <li><span class="prof-name">Bezpečnostní expert (IT)</span> <span class="prof-price">11 490 Kč</span></li>
+                <li><span class="prof-name">Bezpečnostní analytik</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Bio-farmář (Alpy)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Bio-hacker (Laboratoř)</span> <span class="prof-price">13 990 Kč</span></li>
+                <li><span class="prof-name">Biolog (Amazonie)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Biotechnolog</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Bodyguard (Celebrita)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Botanik (Orchideje)</span> <span class="prof-price">3 490 Kč</span></li>
+                <li><span class="prof-name">Broker (Kryptoměny)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Broker (Wall Street)</span> <span class="prof-price">16 990 Kč</span></li>
+                <li><span class="prof-name">Cestovatel (Full-time)</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">CEO Startup-u (Tech)</span> <span class="prof-price">18 990 Kč</span></li>
+                <li><span class="prof-name">CEO Korporátu (FMCG)</span> <span class="prof-price">24 990 Kč</span></li>
+                <li><span class="prof-name">CFO (Finanční ředitel)</span> <span class="prof-price">16 490 Kč</span></li>
+                <li><span class="prof-name">Chirurg (Plastika)</span> <span class="prof-price">29 990 Kč</span></li>
+                <li><span class="prof-name">Chirurg (Kardio)</span> <span class="prof-price">34 990 Kč</span></li>
+                <li><span class="prof-name">Chovatel tygrů</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Cloud Architect</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Copywriter (Ogilvy)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">CTO (Technický ředitel)</span> <span class="prof-price">17 990 Kč</span></li>
+                <li><span class="prof-name">Cukrář (Michelin)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Daňový poradce (Offshore)</span> <span class="prof-price">12 990 Kč</span></li>
+                <li><span class="prof-name">Datový inženýr</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Datový vědec</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Detektiv (Soukromý očko)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Detektiv (Vraždy)</span> <span class="prof-price">10 490 Kč</span></li>
+                <li><span class="prof-name">Diplomat (OSN)</span> <span class="prof-price">15 490 Kč</span></li>
+                <li><span class="prof-name">Dispečer (Letecký provoz)</span> <span class="prof-price">14 990 Kč</span></li>
+
+                <li><span class="prof-name">Dispečer (Záchranka)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">DJ (Ibiza Main Stage)</span> <span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Dřevorubec (Kanada)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Dronový operátor (Kino)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Dronový operátor (Závody)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">E-commerce Manažer</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Editor (Marvel Studios)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Ekolog (Greenpeace)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Elektrikář (Vysoké napětí)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Endokrinolog</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Epidemiolog (WHO)</span> <span class="prof-price">14 490 Kč</span></li>
+                <li><span class="prof-name">E-sport Coach (LoL)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">E-sport Coach (CS2)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">E-sport Hráč (Tier 1)</span> <span class="prof-price">12 990 Kč</span></li>
+                <li><span class="prof-name">Event Manažer (Festival)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Farmaceut (Vývoj léků)</span> <span class="prof-price">13 490 Kč</span></li>
+                <li><span class="prof-name">Filmový kaskadér</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Filmový producent</span> <span class="prof-price">16 990 Kč</span></li>
+                <li><span class="prof-name">Filmový režisér (Indie)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Florista (Svatby VIP)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Fotbalový agent</span> <span class="prof-price">18 990 Kč</span></li>
+                <li><span class="prof-name">Fotbalový trenér (Liga)</span> <span class="prof-price">22 990 Kč</span></li>
+                <li><span class="prof-name">Fotograf (NatGeo)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Fotograf (Vogue módní)</span> <span class="prof-price">14 490 Kč</span></li>
+                <li><span class="prof-name">Full-Stack Developer</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Game Designer (AAA)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Game Designer (Indie)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Gastro-kritik</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Genetik (Klonování)</span> <span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Geolog (Sopky)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Grafik (Branding)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Grafik (UI/UX)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Hacker (White Hat)</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Hasič (Letiště)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Hasič (Speciální výjezd)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Hodinář (Švýcarsko)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Horolezec (Šerpa)</span> <span class="prof-price">12 990 Kč</span></li>
+                <li><span class="prof-name">Hoteliér (5 Hvězd)</span> <span class="prof-price">13 490 Kč</span></li>
+                <li><span class="prof-name">HR Business Partner</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">HR Ředitel (Google)</span> <span class="prof-price">15 990 Kč</span></li>
+                <li><span class="prof-name">Hudební producent</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Hutník (Ostrava styl)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Hydrolog</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Ilustrátor (Dětské knihy)</span> <span class="prof-price">3 990 Kč</span></li>
+                <li><span class="prof-name">Ilustrátor (Komiksy)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Imunolog (Laboratoř)</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Influencer Manažer</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Instalatér (Smart domy)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Instruktor (Potápění)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Instruktor (Parašutismus)</span> <span class="prof-price">7 990 Kč</span></li>
+
+                <li><span class="prof-name">Investiční makléř</span> <span class="prof-price">13 990 Kč</span></li>
+                <li><span class="prof-name">IT Architekt</span> <span class="prof-price">12 990 Kč</span></li>
+                <li><span class="prof-name">Jaderný fyzik</span> <span class="prof-price">22 990 Kč</span></li>
+                <li><span class="prof-name">Jaderný inženýr (Temelín)</span> <span class="prof-price">18 490 Kč</span></li>
+                <li><span class="prof-name">Kadeřník (Hollywood)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Kameraman (Příroda)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Kapitán lodě (Záoceán)</span> <span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Kapitán ponorky</span> <span class="prof-price">24 990 Kč</span></li>
+                <li><span class="prof-name">Kardiolog (Operatér)</span> <span class="prof-price">31 990 Kč</span></li>
+                <li><span class="prof-name">Kartograf (Mapy)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Kaskadér (Auta)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Klenotník (Diamanty)</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Kombajnista (USA)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Komentátor (E-sport)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Komentátor (Sport)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Konstruktér (Automobily)</span> <span class="prof-price">11 490 Kč</span></li>
+                <li><span class="prof-name">Konzultant (McKinsey)</span> <span class="prof-price">13 990 Kč</span></li>
+                <li><span class="prof-name">Korektor (Nakladatelství)</span> <span class="prof-price">2 990 Kč</span></li>
+                <li><span class="prof-name">Kosmonaut (ESA)</span> <span class="prof-price">49 990 Kč</span></li>
+                <li><span class="prof-name">Kovář (Umělecký)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Krejčí (Savile Row)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Kriminalista (CSI)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Krizový manažer</span> <span class="prof-price">16 990 Kč</span></li>
+                <li><span class="prof-name">Kryptograf</span> <span class="prof-price">14 490 Kč</span></li>
+                <li><span class="prof-name">Kurátor (Galerie)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Kuchař (Michelin 3*)</span> <span class="prof-price">17 990 Kč</span></li>
+                <li><span class="prof-name">Kuchař (Na ponorce)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Kynolog (Policie)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Lékař (Urgentní příjem)</span> <span class="prof-price">15 990 Kč</span></li>
+                <li><span class="prof-name">Lékař (Vrtulník LZS)</span> <span class="prof-price">18 490 Kč</span></li>
+                <li><span class="prof-name">Letecký mechanik (Boeing)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Letecký inženýr</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Lékárník</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Lobista (Brusel)</span> <span class="prof-price">21 990 Kč</span></li>
+                <li><span class="prof-name">Logistik (Amazon)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Makléř (Nemovitosti)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Manažer kvality</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Marketingový ředitel</span> <span class="prof-price">12 990 Kč</span></li>
+                <li><span class="prof-name">Matematik (Kvantový)</span> <span class="prof-price">16 490 Kč</span></li>
+                <li><span class="prof-name">Mechanik (Závodní jachta)</span><span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Meteorolog (Tornáda)</span> <span class="prof-price">11 490 Kč</span></li>
+                <li><span class="prof-name">Mikrobiolog</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Mixolog (Koktejly VIP)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Módní návrhář (Paříž)</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Moderátor (Ranní show)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Moderátor (Zprávy TV)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Mykolog (Houby)</span> <span class="prof-price">3 490 Kč</span></li>
+                <li><span class="prof-name">Námořník (Obchodní loď)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Návrhář šperků</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Neurolog</span> <span class="prof-price">18 990 Kč</span></li>
+
+                <li><span class="prof-name">Neurochirurg</span> <span class="prof-price">35 990 Kč</span></li>
+                <li><span class="prof-name">Novinář (Investigativa)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Novinář (Válečný)</span> <span class="prof-price">15 990 Kč</span></li>
+                <li><span class="prof-name">Nutriční terapeut (Sport)</span><span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Obchodní zástupce (B2B)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Oceánograf</span> <span class="prof-price">10 490 Kč</span></li>
+                <li><span class="prof-name">Oční chirurg (Laser)</span> <span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Onkolog</span> <span class="prof-price">17 490 Kč</span></li>
+                <li><span class="prof-name">Operátor (CNC Stroje)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Optik (Design brýlí)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Ortoped (Sportovní)</span> <span class="prof-price">16 990 Kč</span></li>
+                <li><span class="prof-name">Osobní strážce</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Paleontolog (Dinosauři)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Paramedik (SWAT)</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Parfémář (Tvorba vůní)</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Patolog</span> <span class="prof-price">13 990 Kč</span></li>
+                <li><span class="prof-name">Pediatr (Dětský lékař)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Pekař (Francouzská bageta)</span><span class="prof-price">3 490 Kč</span></li>
+                <li><span class="prof-name">Performance Marketer</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Personalista (IT Nábor)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Pivovarník (Sládek)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Pilot (Dopravní Airbus)</span> <span class="prof-price">18 990 Kč</span></li>
+                <li><span class="prof-name">Pilot (Stíhačka F-35)</span> <span class="prof-price">29 990 Kč</span></li>
+                <li><span class="prof-name">Pilot (Záchranný vrtulník)</span><span class="prof-price">22 490 Kč</span></li>
+                <li><span class="prof-name">Pilot (Horkovzdušný balon)</span><span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Plastický chirurg (VIP)</span> <span class="prof-price">32 990 Kč</span></li>
+                <li><span class="prof-name">Podcaster (True Crime)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Policista (Dálniční)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Policista (Vyjednavač)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Politolog (Analytik)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Porodní asistentka</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">PR Manažer (Krizový)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Právník (Korporátní)</span> <span class="prof-price">14 490 Kč</span></li>
+                <li><span class="prof-name">Programátor (Python/AI)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Programátor (C++ Game)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Projektový manažer (Agile)</span><span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Překladatel (Simultánní)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Psychiatr (Soudní)</span> <span class="prof-price">15 990 Kč</span></li>
+                <li><span class="prof-name">Psycholog (Klinický)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Psycholog (Sportovní)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Radiolog</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Realitní makléř (Dubaj VIP)</span><span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Recepční (Burj Al Arab)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Restaurátor (Obrazy)</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Režisér (Hollywood Blockbuster)</span><span class="prof-price">29 990 Kč</span></li>
+                <li><span class="prof-name">Režisér (Reklama)</span> <span class="prof-price">13 990 Kč</span></li>
+                <li><span class="prof-name">Rozhodčí (Liga mistrů)</span> <span class="prof-price">16 490 Kč</span></li>
+                <li><span class="prof-name">Rozpočtář (Stavby)</span> <span class="prof-price">5 490 Kč</span></li>
+                <li><span class="prof-name">Rytec (Mince/Bankovky)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Ředitel školy (Soukromá)</span> <span class="prof-price">9 490 Kč</span></li>
+
+                <li><span class="prof-name">Scenárista (Netflix)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Seo Specialista</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Sommelier (Master)</span> <span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Soudce (Nejvyšší soud)</span> <span class="prof-price">22 990 Kč</span></li>
+                <li><span class="prof-name">Soudce (Okresní)</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Sociolog (Výzkum)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Softwarový inženýr</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Spisovatel (Bestseller)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Starosta (Metropole)</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">Statistik (Data Science)</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Stavební inženýr (Mosty)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Stomatolog (Implantáty)</span> <span class="prof-price">18 990 Kč</span></li>
+                <li><span class="prof-name">Stylista (Celebrita)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Svářeč (Pod vodou)</span> <span class="prof-price">15 490 Kč</span></li>
+                <li><span class="prof-name">Systémový administrátor</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Šéfkuchař (Hotel)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Šperkař (Zlato/Platina)</span> <span class="prof-price">7 990 Kč</span></li>
+                <li><span class="prof-name">Tatér (Custom Blackwork)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Taxikář (Londýn Black Cab)</span> <span class="prof-price">4 490 Kč</span></li>
+                <li><span class="prof-name">Technolog (Potraviny)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Tesař (Roubenky)</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Tiskový mluvčí (Vláda)</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Tlumočník (OSN)</span> <span class="prof-price">13 990 Kč</span></li>
+                <li><span class="prof-name">Toxikolog (Forenzní)</span> <span class="prof-price">10 490 Kč</span></li>
+                <li><span class="prof-name">Trenér (Kulturistika Pro)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Učitel (Střední škola)</span> <span class="prof-price">3 990 Kč</span></li>
+                <li><span class="prof-name">Učitel (Univerzita - Profesor)</span><span class="prof-price">8 490 Kč</span></li>
+                <li><span class="prof-name">Urbanista (Plánovač měst)</span> <span class="prof-price">9 990 Kč</span></li>
+                <li><span class="prof-name">Urolog</span> <span class="prof-price">14 990 Kč</span></li>
+                <li><span class="prof-name">UX/UI Designer (Apple)</span> <span class="prof-price">12 990 Kč</span></li>
+                <li><span class="prof-name">Včelař (Bio Farma)</span> <span class="prof-price">3 490 Kč</span></li>
+                <li><span class="prof-name">Vědec (CERNury)</span> <span class="prof-price">19 990 Kč</span></li>
+                <li><span class="prof-name">Velvyslanec</span> <span class="prof-price">17 490 Kč</span></li>
+                <li><span class="prof-name">Veterinář (ZOO/Exotika)</span> <span class="prof-price">11 490 Kč</span></li>
+                <li><span class="prof-name">Video Editor (YouTube 1M+)</span><span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Vinař (Francie Bordeaux)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Vizažista (Film FX)</span> <span class="prof-price">8 990 Kč</span></li>
+                <li><span class="prof-name">Voják (Speciální síly)</span> <span class="prof-price">16 990 Kč</span></li>
+                <li><span class="prof-name">Vulkanolog</span> <span class="prof-price">13 490 Kč</span></li>
+                <li><span class="prof-name">Web Developer (Senior)</span> <span class="prof-price">9 490 Kč</span></li>
+                <li><span class="prof-name">Záchranář (Hory/Lavinový)</span> <span class="prof-price">10 990 Kč</span></li>
+                <li><span class="prof-name">Zahradní architekt</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Zámečník (Trezory)</span> <span class="prof-price">6 490 Kč</span></li>
+                <li><span class="prof-name">Zlatník</span> <span class="prof-price">7 490 Kč</span></li>
+                <li><span class="prof-name">Zoológ (Afrika Safari)</span> <span class="prof-price">11 990 Kč</span></li>
+                <li><span class="prof-name">Zpravodaj (Zahraniční)</span> <span class="prof-price">12 490 Kč</span></li>
+                <li><span class="prof-name">Zubní hygienista</span> <span class="prof-price">4 990 Kč</span></li>
+                <li><span class="prof-name">Zvukař (Koncerty)</span> <span class="prof-price">5 990 Kč</span></li>
+                <li><span class="prof-name">Železničář (Strojvedoucí)</span> <span class="prof-price">6 990 Kč</span></li>
+                <li><span class="prof-name">Žokej (Dostihy)</span> <span class="prof-price">8 490 Kč</span></li>
+
+                <li><span class="vip-name">E-girl / E-boy Manager</span> <span class="vip-price">Dostupné VIP</span></li>
+                <li><span class="vip-name">Professional Sleeper</span> <span class="vip-price">Dostupné VIP</span></li>
+                <li><span class="vip-name">Zdravotní sestra</span> <span class="vip-price">Dostupné VIP</span></li>
+                <li><span class="vip-name">Meme Curator (Sigma)</span> <span class="vip-price">2 990 Kč</span></li>
+                <li><span class="vip-name">Cat Hair Stylist</span> <span class="vip-price">1 990 Kč</span></li>
+                <li><span class="vip-name">Discord Mod (Pro)</span> <span class="vip-price">990 Kč</span></li>
+                <li><span class="vip-name">Vibe Checker (Expert)</span> <span class="vip-price">1 490 Kč</span></li>
+                <li><span class="vip-name">TikTok Dance Coach</span> <span class="vip-price">2 490 Kč</span></li>
+                <li><span class="vip-name">Professional Apologizer</span> <span class="vip-price">3 490 Kč</span></li>
+                <li><span class="vip-name">Internet Troll (Vládní)</span> <span class="vip-price">4 990 Kč</span></li>
+                <li><span class="vip-name">Ghost Hunter (Real)</span> <span class="vip-price">6 990 Kč</span></li>
+                <li><span class="vip-name">Zombie Survival Expert</span> <span class="vip-price">8 990 Kč</span></li>
+                <li><span class="vip-name">Palačinkový inženýr</span> <span class="vip-price">1 990 Kč</span></li>
+                <li><span class="vip-name">Taste Tester (Zmrzlina)</span> <span class="vip-price">4 490 Kč</span></li>
+                <li><span class="vip-name">Tester Tobogánů</span> <span class="vip-price">5 990 Kč</span></li>
+                <li><span class="vip-name">Ochrutnávač Psího Žrádla</span> <span class="vip-price">8 990 Kč</span></li>
+                <li><span class="vip-name">Hadič dojit (Jed)</span> <span class="vip-price">14 990 Kč</span></li>
+                <li><span class="vip-name">Stavitel Lego Modelů (Pro)</span> <span class="vip-price">6 490 Kč</span></li>
+                <li><span class="vip-name">Lovec Bouří (Tornáda)</span> <span class="vip-price">19 990 Kč</span></li>
+                <li><span class="vip-name">Profesionální Křičič</span> <span class="vip-price">2 490 Kč</span></li>
+                <li><span class="vip-name">Vyháněč Holubů</span> <span class="vip-price">1 490 Kč</span></li>
+                <li><span class="vip-name">Vodní Sommelier</span> <span class="vip-price">4 990 Kč</span></li>
+                <li><span class="vip-name">Objímač Stromů (Certifikovaný)</span><span class="vip-price">990 Kč</span></li>
+                <li><span class="vip-name">Čekač ve Frontě (Apple Store)</span><span class="vip-price">1 990 Kč</span></li>
+                <li><span class="vip-name">Šeptal pro Koně</span> <span class="vip-price">5 490 Kč</span></li>
+                <li><span class="vip-name">Designer Únikových Her</span> <span class="vip-price">7 990 Kč</span></li>
+                <li><span class="vip-name">Tester Luxusních Jachet</span> <span class="vip-price">24 990 Kč</span></li>
+                <li><span class="vip-name">Nákupčí Ostrovů</span> <span class="vip-price">39 990 Kč</span></li>
+                <li><span class="vip-name">Osobní Shopper (Milionáři)</span> <span class="vip-price">12 490 Kč</span></li>
+                <li><span class="vip-name">Hledač Lanýžů</span> <span class="vip-price">8 490 Kč</span></li>
+                <li><span class="vip-name">Čistič Dinosařích Kostí</span> <span class="vip-price">6 990 Kč</span></li>
+                <li><span class="vip-name">Tester Postelí (IKEA)</span> <span class="vip-price">2 990 Kč</span></li>
+                <li><span class="vip-name">Instruktor Surfování pro Psy</span><span class="vip-price">4 490 Kč</span></li>
+                <li><span class="vip-name">Terapeut pro Papoušky</span> <span class="vip-price">5 990 Kč</span></li>
+                <li><span class="vip-name">Profesionální Plačka (Pohřby)</span><span class="vip-price">3 490 Kč</span></li>
+                <li><span class="vip-name">Záchranář Tučňáků</span> <span class="vip-price">11 990 Kč</span></li>
+                <li><span class="vip-name">Vývojář Nových Příchutí Chipsů</span><span class="vip-price">7 490 Kč</span></li>
+                <li><span class="vip-name">Tester Kvality Toaletního Papíru</span><span class="vip-price">2 490 Kč</span></li>
+                <li><span class="vip-name">Strážce Majáku (Offline)</span> <span class="vip-price">8 990 Kč</span></li>
+                <li><span class="vip-name">Čistič Uší Slonům</span> <span class="vip-price">13 490 Kč</span></li>
+                <li><span class="vip-name">Hráč na Triangl (Filharmonie)</span><span class="vip-price">6 490 Kč</span></li>
+                <li><span class="vip-name">Mistr v Balení Dárků</span> <span class="vip-price">1 990 Kč</span></li>
+                <li><span class="vip-name">Tester Deodorantů (Čichač)</span> <span class="vip-price">9 990 Kč</span></li>
+                <li><span class="vip-name">Osobní Ohřívač Postelí</span> <span class="vip-price">3 990 Kč</span></li>
+                <li><span class="vip-name">Rozplétač Kabelů a Sluchátek</span><span class="vip-price">1 490 Kč</span></li>
+                <li><span class="vip-name">Lovce Mimozemšťanů (Area 51)</span><span class="vip-price">19 990 Kč</span></li>
+                <li><span class="vip-name">Krotitel Lvů</span> <span class="vip-price">21 990 Kč</span></li>
+                <li><span class="vip-name">Pilot Papírových Vlaštovek</span> <span class="vip-price">990 Kč</span></li>
+                <li><span class="vip-name">Znalec Memů (Historik)</span> <span class="vip-price">4 990 Kč</span></li>
+                <li><span class="vip-name">Sběrač Vesmírného Odpadu</span> <span class="vip-price">99 990 Kč</span></li>
             </ul>
 
-            <h2 class="text-2xl font-black text-slate-800 mb-6 border-b border-slate-200 pb-4 uppercase tracking-widest">P - Z</h2>
-            <ul class="space-y-3">
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg">Pilot dopravního letadla</span> <span class="font-black text-slate-400">Na vyžádání</span></li>
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg text-indigo-600">Professional Sleeper</span> <span class="font-black text-slate-900">Dostupné</span></li>
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg">PR Manager (Krizový management)</span> <span class="font-black text-slate-400">Na vyžádání</span></li>
-                <li class="flex justify-between items-center p-3 hover:bg-slate-50 rounded-lg transition"><span class="font-bold text-lg text-emerald-600">Zdravotní sestra</span> <span class="font-black text-slate-900">Dostupné</span></li>
-            </ul>
-
-            <div class="mt-12 text-center text-sm text-slate-400 font-bold uppercase tracking-widest">
-                * Kompletní ceník a zbylých 190+ profesí odhalujeme pouze na vyžádání VIP klientům.
-            </div>
         </div>
     </section>
+
+    <footer class="py-12 bg-slate-50 border-t border-slate-200 text-center">
+        <p class="text-slate-400 font-bold uppercase tracking-widest text-xs mb-4">Sídlo: Frýdecká 819, Český Těšín | OACT Projekt</p>
+        <p class="text-slate-300 italic text-[10px]">Poznámka: Antonín Swaczyna má do této databáze přísný zákaz vstupu, aby nám nesmazal data.</p>
+    </footer>
 
 </body>
 </html>
