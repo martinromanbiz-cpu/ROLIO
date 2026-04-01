@@ -1,68 +1,71 @@
 <!DOCTYPE html>
-<html lang="cs">
+<html lang="cs" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ROLIO | Náš Tým</title>
+    <title>ROLIO | Vedení společnosti</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="bg-slate-50 text-slate-900 font-['Inter']">
 
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <a href="index.html" class="text-3xl font-black tracking-tighter text-blue-600">ROLIO<span class="text-green-500">.</span></a>
-        <div class="hidden md:flex space-x-8 font-bold text-slate-600">
-            <a href="index.html" class="hover:text-blue-600 transition">Domů</a>
-            <a href="sluzby.html" class="hover:text-blue-600 transition">Profese a Ceník</a>
-            <a href="tym.html" class="text-blue-600">Náš Tým</a>
-            <a href="kontakt.html" class="hover:text-blue-600 transition">Kontakt</a>
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 p-4 shadow-sm">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-4">
+                <img src="rolio.jpg" alt="ROLIO Logo" class="h-12 w-auto rounded-xl shadow-md border border-slate-100">
+                <span class="text-3xl font-black tracking-tighter text-slate-900">ROLIO<span class="text-blue-600">.</span></span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-bold text-slate-500 uppercase tracking-widest text-sm">
+                <a href="sluzby.html" class="hover:text-blue-600 transition">Exkluzivní databáze</a>
+                <a href="tym.html" class="text-blue-600 transition">Vedení firmy</a>
+                <a href="kontakt.html" class="hover:text-blue-600 transition">Kontakt</a>
+            </div>
         </div>
-        <a href="kontakt.html" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Chci zkusit</a>
     </nav>
 
-    <section class="py-12 px-6 max-w-7xl mx-auto text-center">
-        <h1 class="text-5xl font-black mb-4">Mozky za <span class="text-blue-600">operací</span></h1>
-        <p class="text-xl text-slate-600">Zakladatelé ROLIO. 5 hochů, jeden cíl.</p>
+    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
+        <h1 class="text-5xl font-black mb-6 uppercase tracking-tighter">Představenstvo <span class="text-blue-600">společnosti</span></h1>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto">Za každou prémiovou značkou stojí lidé, kteří definují její úspěch. Poznejte architektý ROLIO.</p>
     </section>
 
-    <section class="pb-20 px-6 max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+    <section class="pb-24 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-left mb-12">
             
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-2 border-transparent hover:border-blue-500 transition">
-                <div class="w-24 h-24 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl">👑</div>
-                <h3 class="text-2xl font-bold">Tomáš Sikora</h3>
-                <p class="text-blue-600 font-bold mb-2">CEO</p>
-                <p class="text-slate-500 text-sm">Vizionář, který řídí celou show.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 hover:shadow-2xl transition">
+                <h3 class="text-2xl font-black text-slate-900">Tomáš Sikora</h3>
+                <p class="text-blue-600 font-black uppercase tracking-widest text-sm mb-4 mt-1">Chief Executive Officer</p>
+                <p class="text-slate-600 font-medium">Vizionář, který drží směr celé firmy. Definuje strategické cíle a zajišťuje, aby ROLIO zůstalo absolutní špičkou na trhu zprostředkování.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-2 border-transparent hover:border-green-500 transition">
-                <div class="w-24 h-24 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl">🚀</div>
-                <h3 class="text-2xl font-bold">Martin Roman</h3>
-                <p class="text-green-600 font-bold mb-2">Marketing</p>
-                <p class="text-slate-500 text-sm">Hype engine. Prodá i to, co ještě nemáme.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 hover:shadow-2xl transition border-l-4 border-l-blue-600">
+                <h3 class="text-2xl font-black text-slate-900">Martin Roman</h3>
+                <p class="text-blue-600 font-black uppercase tracking-widest text-sm mb-4 mt-1">Marketing Director</p>
+                <p class="text-slate-600 font-medium">Architekt našeho exkluzivního brandu a AI automatizací. Tvoří image, kterou konkurence jen tiše sleduje.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-2 border-transparent hover:border-orange-500 transition">
-                <div class="w-24 h-24 bg-orange-100 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl">📊</div>
-                <h3 class="text-2xl font-bold">Ondra Himlar</h3>
-                <p class="text-orange-600 font-bold mb-2">Účetní</p>
-                <p class="text-slate-500 text-sm">Hlídá cashflow a dělá z červených čísel černá.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 hover:shadow-2xl transition">
+                <h3 class="text-2xl font-black text-slate-900">Ondra Himlar</h3>
+                <p class="text-blue-600 font-black uppercase tracking-widest text-sm mb-4 mt-1">Chief Financial Officer</p>
+                <p class="text-slate-600 font-medium">Strážce kapitálu. Stará se o to, aby finanční toky naší prémiové služby byly vždy v dokonalém pořádku.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-2 border-transparent hover:border-red-500 transition md:col-start-2">
-                <div class="w-24 h-24 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl">🎯</div>
-                <h3 class="text-2xl font-bold">Jakub Heczko</h3>
-                <p class="text-red-600 font-bold mb-2">Zástupce CEO</p>
-                <p class="text-slate-500 text-sm">Pravá ruka a stratég projektu.</p>
+            <div class="bg-white p-8 rounded-3xl shadow-xl border border-slate-100 hover:shadow-2xl transition">
+                <h3 class="text-2xl font-black text-slate-900">Jakub Heczko</h3>
+                <p class="text-blue-600 font-black uppercase tracking-widest text-sm mb-4 mt-1">Zástupce CEO</p>
+                <p class="text-slate-600 font-medium">Operativní mozek firmy. Řeší krizový management a zajišťuje, že všechny procesy běží s naprostou přesností.</p>
             </div>
 
-            <div class="bg-white p-8 rounded-3xl shadow-lg border-2 border-transparent hover:border-purple-500 transition">
-                <div class="w-24 h-24 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center text-3xl">📝</div>
-                <h3 class="text-2xl font-bold">Antonín Swaczyna</h3>
-                <p class="text-purple-600 font-bold mb-2">Sekretářka</p>
-                <p class="text-slate-500 text-sm">Backoffice boss. Udržuje v tom všem systém.</p>
-            </div>
+        </div>
 
+        <div class="max-w-4xl mx-auto bg-slate-200/50 p-10 rounded-3xl border border-slate-300 relative overflow-hidden">
+            <div class="absolute right-0 top-0 text-9xl text-slate-300/30 font-black pointer-events-none">0.00001%</div>
+            <h3 class="text-3xl font-black text-slate-800">Antonín Swaczyna</h3>
+            <p class="text-slate-500 font-black uppercase tracking-widest text-sm mb-6 mt-1">Páté kolo u vozu (Sekretářka)</p>
+            <div class="text-slate-700 font-medium space-y-4 relative z-10 text-lg">
+                <p>Na chodu prémiové firmy se podílí přesně z <span class="font-black">0,00001 %</span>. Legenda praví, že není úplně nejostřejší tužka v penále, a když se rozdával postřeh, Tonda stál ve frontě na blbé kecy.</p>
+                <p>Je to celkově pomalejší člověk, kterému občas věci docházejí až další pracovní den. Jeho naprosto exkluzivní a jedinou pracovní náplní je <span class="font-black text-red-600">sedět a mít blbé kecy</span>.</p>
+                <p class="italic text-sm text-slate-500 mt-4 pt-4 border-t border-slate-300">"Každá VIP firma potřebuje maskota, co vypije všechno kafe. Tonda je náš." – Vedení ROLIO.</p>
+            </div>
         </div>
     </section>
 
