@@ -5,93 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROLIO | Žij svou roli</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #2563eb, #16a34a, #ea580c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        
-        /* Animace pro W web */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(40px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        .animate-fade-up { animation: fadeUp 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
-        .delay-100 { animation-delay: 100ms; }
-        .delay-200 { animation-delay: 200ms; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 font-['Inter']">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-200 p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="#hero" class="text-3xl font-extrabold tracking-tighter text-blue-600">ROLIO<span class="text-green-500">.</span></a>
-            <div class="hidden md:flex space-x-8 font-bold">
-                <a href="#tym" class="hover:text-blue-600 transition">Náš Tým</a>
-                <a href="#profese" class="hover:text-blue-600 transition">Databáze Profesí</a>
-            </div>
-            <a href="mailto:rolio.jobs@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition transform hover:scale-105 shadow-lg">Kontakt</a>
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="index.html" class="text-3xl font-black tracking-tighter text-blue-600">ROLIO<span class="text-green-500">.</span></a>
+        <div class="hidden md:flex space-x-8 font-bold text-slate-600">
+            <a href="index.html" class="text-blue-600">Domů</a>
+            <a href="sluzby.html" class="hover:text-blue-600 transition">Profese a Ceník</a>
+            <a href="tym.html" class="hover:text-blue-600 transition">Náš Tým</a>
+            <a href="kontakt.html" class="hover:text-blue-600 transition">Kontakt</a>
         </div>
+        <a href="kontakt.html" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Chci zkusit</a>
     </nav>
 
-    <section id="hero" class="py-24 px-6 max-w-7xl mx-auto text-center animate-fade-up">
-        <div class="bg-slate-900 text-white rounded-[3rem] p-12 md:p-24 relative overflow-hidden shadow-2xl">
-            <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight relative z-10">Žij <span class="gradient-text bg-white px-4 rounded-3xl inline-block">roli</span>,<br>nepřemýšlej o ní.</h1>
-            <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10 relative z-10">Fiktivní firma ROLIO vznikla divokým nápadem 5ti hochů. Vyzkoušej si libovolnou profesi na vlastní kůži dřív, než uděláš životní chybu.</p>
-            <a href="#profese" class="inline-block bg-green-500 text-slate-900 px-10 py-4 rounded-xl font-black text-xl hover:bg-green-400 transition transform hover:scale-105 relative z-10 shadow-lg">Vybrat profesi</a>
-        </div>
-    </section>
-
-    <section id="tym" class="py-20 px-6 max-w-7xl mx-auto animate-fade-up delay-100">
-        <h2 class="text-4xl font-bold mb-12 text-center">Náš <span class="text-blue-600">Tým</span></h2>
-        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 text-center">
-            <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 hover:border-blue-500 transition">
-                <div class="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">😎</div>
-                <h3 class="font-bold text-lg">Tomáš Sikora</h3>
-                <p class="text-blue-600 text-sm font-bold">CEO</p>
-            </div>
-            <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 hover:border-blue-500 transition">
-                <div class="w-20 h-20 bg-green-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">🚀</div>
-                <h3 class="font-bold text-lg">Martin Roman</h3>
-                <p class="text-blue-600 text-sm font-bold">Marketing</p>
-            </div>
-            <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 hover:border-blue-500 transition">
-                <div class="w-20 h-20 bg-yellow-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">📈</div>
-                <h3 class="font-bold text-lg">Ondra Himlar</h3>
-                <p class="text-blue-600 text-sm font-bold">Účetní</p>
-            </div>
-            <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 hover:border-blue-500 transition">
-                <div class="w-20 h-20 bg-red-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">🎯</div>
-                <h3 class="font-bold text-lg">Jakub Heczko</h3>
-                <p class="text-blue-600 text-sm font-bold">Zástupce CEO</p>
-            </div>
-            <div class="bg-white p-6 rounded-3xl shadow-xl border border-slate-100 hover:border-blue-500 transition">
-                <div class="w-20 h-20 bg-purple-100 rounded-full mx-auto mb-4 flex items-center justify-center text-2xl">📝</div>
-                <h3 class="font-bold text-lg">Antonín Swaczyna</h3>
-                <p class="text-blue-600 text-sm font-bold">Sekretářka</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="profese" class="py-20 bg-slate-100 px-6 animate-fade-up delay-200">
-        <div class="max-w-7xl mx-auto">
-            <div class="flex flex-col md:flex-row justify-between items-center mb-10">
-                <h2 class="text-4xl font-bold">Databáze <span class="text-orange-500">200+ Profesí</span></h2>
-                <input type="text" id="searchInput" placeholder="Hledat profesi..." class="mt-4 md:mt-0 p-4 rounded-xl border-2 border-slate-300 focus:border-blue-600 focus:outline-none w-full md:w-72 shadow-sm">
-            </div>
+    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
+        <div class="bg-slate-900 text-white rounded-[3rem] p-12 md:p-24 shadow-2xl relative overflow-hidden">
+            <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
             
-            <div class="bg-white p-8 rounded-3xl shadow-xl max-h-[600px] overflow-y-auto">
-                <div id="professionsList" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                    </div>
+            <div class="relative z-10">
+                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Žij <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">roli</span>,<br>nepřemýšlej o ní.</h1>
+                <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">Zkus si vysněnou práci na 1 den nebo týden v reálném provozu. Od divokého nápadu k reálným zkušenostem pro všechny.</p>
+                <div class="flex justify-center gap-4">
+                    <a href="sluzby.html" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition shadow-xl">Prozkoumat profese</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-12 bg-slate-900 text-white text-center">
-        <h2 class="text-2xl font-bold mb-4">Máš vybráno? Napiš nám.</h2>
-        <a href="mailto:rolio.jobs@gmail.com" class="text-blue-400 font-bold hover:underline text-xl">rolio.jobs@gmail.com</a>
-        <p class="mt-8 text-slate-500 text-sm">© 2026 ROLIO fiktivní firma s.r.o. | OA Ostrava projekt</p>
-    </footer>
+    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-black mb-6">Proč ROLIO?</h2>
+        <p class="text-xl text-slate-600">Vznikli jsme jako fiktivní firma divokým nápadem 5ti nápaditých hochů. Cíl je jasný: nenechat lidi dělat životní chyby při výběru kariéry. Vyzkoušej si to naostro, než se upíšeš na celý život.</p>
+    </section>
 
-    <script>
-        const bases = ["Specialista", "Inženýr", "Manažer", "Technik", "Konzultant", "Asistent", "Analytik", "Ředitel", "Vývojář", "Koordinátor", "Inspektor", "Instruktor"];
-        const fields = ["AI", "Robotiky", "Fin
+</body>
+</html>
