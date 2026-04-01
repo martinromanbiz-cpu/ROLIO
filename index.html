@@ -9,35 +9,106 @@
 </head>
 <body class="bg-slate-50 text-slate-900 font-['Inter']">
 
-    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
-        <a href="index.html" class="text-3xl font-black tracking-tighter text-blue-600">ROLIO<span class="text-green-500">.</span></a>
-        <div class="hidden md:flex space-x-8 font-bold text-slate-600">
-            <a href="index.html" class="text-blue-600">Domů</a>
-            <a href="sluzby.html" class="hover:text-blue-600 transition">Profese a Ceník</a>
-            <a href="tym.html" class="hover:text-blue-600 transition">Náš Tým</a>
-            <a href="kontakt.html" class="hover:text-blue-600 transition">Kontakt</a>
+    <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 p-4">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="rolio.jpg" alt="ROLIO Logo" class="h-10 w-auto rounded-lg shadow-sm">
+                <span class="text-3xl font-black tracking-tighter text-blue-600">ROLIO<span class="text-green-500">.</span></span>
+            </a>
+            <div class="hidden md:flex space-x-8 font-bold text-slate-600">
+                <a href="sluzby.html" class="hover:text-blue-600 transition">Profese</a>
+                <a href="tym.html" class="hover:text-blue-600 transition">Náš Tým</a>
+                <a href="kontakt.html" class="hover:text-blue-600 transition">Kontakt</a>
+            </div>
+            <a href="kontakt.html" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Chci zkusit</a>
         </div>
-        <a href="kontakt.html" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Chci zkusit</a>
     </nav>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
+    <section class="py-16 px-6 max-w-7xl mx-auto text-center">
         <div class="bg-slate-900 text-white rounded-[3rem] p-12 md:p-24 shadow-2xl relative overflow-hidden">
-            <div class="absolute inset-0 opacity-30 bg-[url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
-            
+            <div class="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center"></div>
             <div class="relative z-10">
-                <h1 class="text-5xl md:text-7xl font-black mb-6 leading-tight">Žij <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">roli</span>,<br>nepřemýšlej o ní.</h1>
-                <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10">Zkus si vysněnou práci na 1 den nebo týden v reálném provozu. Od divokého nápadu k reálným zkušenostem pro všechny.</p>
-                <div class="flex justify-center gap-4">
-                    <a href="sluzby.html" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-100 transition shadow-xl">Prozkoumat profese</a>
+                <h1 class="text-5xl md:text-8xl font-black mb-6 leading-tight">Zkušenost, co <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-green-400">nemá filtr.</span></h1>
+                <p class="text-xl text-slate-300 max-w-2xl mx-auto mb-10 font-medium italic">"Žít roli, ne o ní jen přemýšlet."</p>
+                <a href="sluzby.html" class="bg-white text-slate-900 px-10 py-4 rounded-2xl font-black text-xl hover:bg-blue-500 hover:text-white transition transform hover:scale-105 shadow-2xl">Vyber si svůj život</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+        <div>
+            <h2 class="text-4xl font-black mb-6 border-l-8 border-blue-600 pl-6">Kdo jsme? <span class="text-blue-600">Budoucnost volby.</span></h2>
+            <p class="text-lg text-slate-600 mb-6 leading-relaxed">
+                ROLIO je revoluční platforma, která boří zdi mezi školou a realitou. Nabízíme lidem možnost **skočit do jakékoliv profese na 1 den až 1 týden**. Nejsme kurz, nejsme simulace. Jsme reálný provoz, reálný stres a reálný vibe.
+            </p>
+            <ul class="space-y-4">
+                <li class="flex items-center gap-3 font-bold"><span class="text-green-500 text-2xl">✓</span> 200+ reálných profesí</li>
+                <li class="flex items-center gap-3 font-bold"><span class="text-green-500 text-2xl">✓</span> Spolupráce s top firmami v ČR</li>
+                <li class="flex items-center gap-3 font-bold"><span class="text-green-500 text-2xl">✓</span> Žádná teorie, jen čistý field-work</li>
+            </ul>
+        </div>
+        <div class="bg-blue-600 rounded-[3rem] p-10 text-white shadow-2xl transform rotate-2">
+            <h3 class="text-3xl font-black mb-4 underline decoration-green-400">Jak to funguje?</h3>
+            <ol class="space-y-6 text-lg font-bold">
+                <li class="flex gap-4"><span class="bg-white text-blue-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0">1</span> Vybereš si roli v naší databázi.</li>
+                <li class="flex gap-4"><span class="bg-white text-blue-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0">2</span> ROLIO tě propojí s certifikovaným partnerem.</li>
+                <li class="flex gap-4"><span class="bg-white text-blue-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0">3</span> Dostaneš mentora a scénář dne.</li>
+                <li class="flex gap-4"><span class="bg-white text-blue-600 rounded-full w-8 h-8 flex items-center justify-center shrink-0">4</span> Makáš, učíš se a zjistíš, jestli je to pro tebe.</li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="py-20 bg-slate-100 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-black mb-12">Odkud bereme <span class="text-green-600">cash?</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-blue-500">
+                    <h4 class="text-xl font-black mb-4 uppercase tracking-widest">B2C Model</h4>
+                    <p class="text-slate-500 font-medium">Zákazníci platí za unikátní zážitek a kariérní poradenství v praxi. (Low až High ticket).</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-green-500">
+                    <h4 class="text-xl font-black mb-4 uppercase tracking-widest">B2B Recruitment</h4>
+                    <p class="text-slate-500 font-medium">Firmy nám platí za přísun motivovaných talentů. Fungujeme jako filtr pro budoucí zaměstnance.</p>
+                </div>
+                <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-orange-500">
+                    <h4 class="text-xl font-black mb-4 uppercase tracking-widest">Partnerství</h4>
+                    <p class="text-slate-500 font-medium">Provize ze spolupráce s velkými korporáty, které chtějí zlepšit svůj Employer Branding.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 max-w-4xl mx-auto text-center">
-        <h2 class="text-4xl font-black mb-6">Proč ROLIO?</h2>
-        <p class="text-xl text-slate-600">Vznikli jsme jako fiktivní firma divokým nápadem 5ti nápaditých hochů. Cíl je jasný: nenechat lidi dělat životní chyby při výběru kariéry. Vyzkoušej si to naostro, než se upíšeš na celý život.</p>
+    <section class="py-20 px-6 max-w-7xl mx-auto">
+        <h2 class="text-4xl font-black mb-12 text-center underline decoration-blue-600">Náš "elitní" tým</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition">
+                <h3 class="text-2xl font-black">Tomáš Sikora</h3>
+                <p class="text-blue-600 font-bold mb-4">CEO & Vizionář</p>
+                <p class="text-slate-500 text-sm">Mozek operace. Spí 3 hodiny denně, zbytek času plánuje, jak ovládnout trh práce.</p>
+            </div>
+            <div class="bg-white p-8 rounded-3xl shadow-xl hover:scale-105 transition border-2 border-blue-500">
+                <h3 class="text-2xl font-black">Martin Roman</h3>
+                <p class="text-blue-600 font-bold mb-4">Marketing & AI Automation</p>
+                <p class="text-slate-500 text-sm">Hype stroj. Krotitel algoritmů a n8n workflow. Buduje brand, který nejde ignorovat.</p>
+            </div>
+            <div class="bg-slate-200 p-8 rounded-3xl shadow-inner border-2 border-dashed border-slate-400 opacity-80">
+                <h3 class="text-2xl font-black italic text-slate-500">Antonín Swaczyna</h3>
+                <p class="text-red-600 font-bold mb-4">Páté kolo u vozu</p>
+                <p class="text-slate-600 text-sm italic">
+                    Legenda praví, že ho jednou viděli otevřít notebook, ale byl to jen odraz v okně. Jeho hlavní náplní práce je **sedět, existovat a nezavazet**. Má černý pásek v nicnedělání. Kdyby se dávala cena za nejméně odpracovaných vteřin, má zlato.
+                </p>
+            </div>
+        </div>
+        <div class="text-center mt-12">
+            <a href="tym.html" class="text-blue-600 font-bold hover:underline">Zobrazit zbytek crew →</a>
+        </div>
     </section>
+
+    <footer class="py-12 bg-slate-900 text-white text-center rounded-t-[3rem]">
+        <p class="text-lg font-bold mb-2">Máš na to žít svou roli?</p>
+        <a href="mailto:rolio.jobs@gmail.com" class="text-blue-400 font-black text-2xl hover:text-green-400 transition">rolio.jobs@gmail.com</a>
+        <div class="mt-8 opacity-50 text-xs">© 2026 ROLIO fiktivní firma s.r.o. | OA Ostrava projekt</div>
+    </footer>
 
 </body>
 </html>
