@@ -5,29 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROLIO | Kontakt</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Inter', sans-serif; }
-        .gradient-text { background: linear-gradient(90deg, #2563eb, #16a34a, #ea580c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-slate-50 text-slate-900 font-['Inter'] flex flex-col min-h-screen">
 
-    <section class="py-20 px-6 max-w-7xl mx-auto text-center relative overflow-hidden rounded-3xl mb-12" style="background-image: url('path/to/r_logo_3d_enhancement.png'); background-size: cover; background-position: center;">
-        <div class="absolute inset-0 bg-black/60 blur-sm"></div>
-        <div class="relative z-10 p-10 bg-white/70 backdrop-blur-lg rounded-xl">
-            <h1 class="text-6xl font-black mb-6 leading-tight">Kontaktujte <span class="gradient-text">Nás</span></h1>
-            <p class="text-xl text-slate-700 max-w-2xl mx-auto mb-10">Máte dotazy, nebo chcete rovnou zkusit svou novou roli? Pošlete nám e-mail a my se ozveme.</p>
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto w-full">
+        <a href="index.html" class="text-3xl font-black tracking-tighter text-blue-600">ROLIO<span class="text-green-500">.</span></a>
+        <div class="hidden md:flex space-x-8 font-bold text-slate-600">
+            <a href="index.html" class="hover:text-blue-600 transition">Domů</a>
+            <a href="sluzby.html" class="hover:text-blue-600 transition">Profese a Ceník</a>
+            <a href="tym.html" class="hover:text-blue-600 transition">Náš Tým</a>
+            <a href="kontakt.html" class="text-blue-600">Kontakt</a>
         </div>
-    </section>
+        <a href="mailto:rolio.jobs@gmail.com" class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Napsat mail</a>
+    </nav>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
-        <div class="p-10 bg-white shadow-xl rounded-3xl border border-slate-100">
-            <h2 class="text-3xl font-bold mb-6">Chci <span class="text-orange-500">zkusit</span></h2>
-            <p class="text-slate-600 mb-8">Napište nám na náš e-mail a do předmětu dejte "ROLIO - Žádost".</p>
-            <a href="mailto:rolio.jobs@gmail.com?subject=ROLIO - Žádost&body=Dobrý den, mám zájem o zkušenost..." class="bg-blue-600 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-700 transition transform hover:scale-105 shadow-xl">Poslat mail pro zkušenost</a>
+    <main class="flex-grow flex items-center justify-center px-6">
+        <div class="bg-white p-12 rounded-3xl shadow-2xl text-center max-w-2xl w-full border border-slate-100">
+            <div class="w-20 h-20 bg-blue-100 text-blue-600 rounded-full mx-auto flex items-center justify-center text-4xl mb-6">✉️</div>
+            <h1 class="text-4xl font-black mb-4">Jdeme na to?</h1>
+            <p class="text-slate-600 mb-8 text-lg">Zaujala tě nějaká profese? Napiš nám mail s tím, co si chceš vyzkoušet, a náš tým se ti obratem ozve s detaily.</p>
+            
+            <a href="mailto:rolio.jobs@gmail.com" class="inline-block bg-slate-900 text-white px-10 py-5 rounded-2xl font-black text-xl hover:bg-slate-800 transition shadow-xl w-full md:w-auto">
+                rolio.jobs@gmail.com
+            </a>
         </div>
-    </section>
+    </main>
 
-    </body>
+    <footer class="py-8 text-center text-slate-500 text-sm font-bold">
+        © 2026 ROLIO fiktivní firma s.r.o. | OA Ostrava - Projekt
+    </footer>
+
+</body>
 </html>
