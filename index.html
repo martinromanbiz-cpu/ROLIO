@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROLIO | Žij svou roli</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .gradient-text { background: linear-gradient(90deg, #2563eb, #16a34a, #ea580c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto">
+        <div class="text-2xl font-extrabold tracking-tighter text-blue-600">ROLIO<span class="text-green-600">.</span></div>
+        <div class="space-x-8 font-medium hidden md:flex">
+            <a href="#profese" class="hover:text-blue-600 transition">Profese</a>
+            <a href="#cenik" class="hover:text-blue-600 transition">Ceník</a>
+            <a href="#pro-firmy" class="hover:text-blue-600 transition">Pro firmy</a>
+        </div>
+        <button class="bg-blue-600 text-white px-6 py-2 rounded-full font-bold hover:bg-blue-700 transition shadow-lg">Chci zkusit</button>
+    </nav>
+
+    <section class="py-20 px-6 max-w-7xl mx-auto text-center">
+        <h1 class="text-6xl md:text-8xl font-black mb-6 leading-tight">Žij <span class="gradient-text">roli</span>,<br>nepřemýšlej o ní.</h1>
+        <p class="text-xl text-slate-600 max-w-2xl mx-auto mb-10">Zkus si vysněnou práci na 1 den nebo týden v reálném provozu. Žádná teorie, jen čistá praxe pod dohledem profíků.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#profese" class="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-slate-800 transition">Prozkoumat profese</a>
+            <a href="#" class="bg-white border-2 border-slate-200 px-8 py-4 rounded-xl font-bold text-lg hover:border-blue-600 transition">Jak to funguje?</a>
+        </div>
+    </section>
+
+    <section id="profese" class="py-20 bg-white px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold mb-12">Nejoblíbenější <span class="text-blue-600">experience</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="group cursor-pointer">
+                    <div class="h-64 bg-slate-200 rounded-3xl mb-4 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Pilot dopravního letadla</div>
+                    </div>
+                    <p class="text-slate-500 uppercase text-sm font-bold tracking-widest">High-end zážitek</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="h-64 bg-slate-200 rounded-3xl mb-4 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Bio-farmář v podhůří</div>
+                    </div>
+                    <p class="text-slate-500 uppercase text-sm font-bold tracking-widest">Hard-core praxe</p>
+                </div>
+                <div class="group cursor-pointer">
+                    <div class="h-64 bg-slate-200 rounded-3xl mb-4 overflow-hidden relative">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4 text-white font-bold text-xl">Módní návrhář (Studio)</div>
+                    </div>
+                    <p class="text-slate-500 uppercase text-sm font-bold tracking-widest">Kreativní flow</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cenik" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Vyber si svou <span class="text-orange-500">délku</span></h2>
+            <p class="text-slate-500">Všechny balíčky obsahují pojištění a mentora.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-8 border-2 border-slate-100 rounded-3xl hover:border-blue-600 transition">
+                <h3 class="text-xl font-bold mb-4">1 Den</h3>
+                <div class="text-4xl font-black mb-6">2 490 Kč</div>
+                <ul class="text-slate-600 space-y-3 mb-8">
+                    <li>Rychlý vhled</li>
+                    <li>Práce na 1 úkolu</li>
+                    <li>Certifikát "Rookie"</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl border-2 border-slate-900 font-bold">Zvolit</button>
+            </div>
+            <div class="p-8 bg-blue-600 text-white rounded-3xl transform scale-105 shadow-2xl">
+                <h3 class="text-xl font-bold mb-4 italic">Víkend</h3>
+                <div class="text-4xl font-black mb-6">5 990 Kč</div>
+                <ul class="opacity-90 space-y-3 mb-8">
+                    <li>Intenzivní 48h role</li>
+                    <li>Vlastní projekt</li>
+                    <li>Networking s partnery</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl bg-white text-blue-600 font-bold">Nejpopulárnější</button>
+            </div>
+            <div class="p-8 border-2 border-slate-100 rounded-3xl hover:border-green-600 transition">
+                <h3 class="text-xl font-bold mb-4">1 Týden</h3>
+                <div class="text-4xl font-black mb-6">14 990 Kč</div>
+                <ul class="text-slate-600 space-y-3 mb-8">
+                    <li>Kompletní zaučení</li>
+                    <li>Reálná zodpovědnost</li>
+                    <li>Možnost pracovní nabídky</li>
+                </ul>
+                <button class="w-full py-3 rounded-xl border-2 border-slate-900 font-bold">Zvolit</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-20 bg-slate-900 text-white px-6">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+            <div>
+                <h2 class="text-3xl font-bold mb-2">Chceš být náš partner?</h2>
+                <p class="text-slate-400">Firmy přes nás hledají motivované lidi. Buďte u toho.</p>
+            </div>
+            <button class="bg-green-600 px-10 py-4 rounded-xl font-bold text-lg hover:bg-green-700 transition">Kontaktujte nás</button>
+        </div>
+        <div class="mt-20 border-t border-slate-800 pt-10 text-center text-slate-500 text-sm">
+            © 2026 ROLIO fiktivní firma s.r.o. | OA Ostrava projekt
+        </div>
+    </footer>
+
+</body>
+</html>
