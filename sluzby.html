@@ -4,9 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ROLIO | Ultimátní Katalog (300 Profesí)</title>
+    <link rel="icon" type="image/jpeg" href="image.jpeg">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
+        ::selection { background: #2563eb; color: white; }
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f5f9; }
+        ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
+        ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
         .prof-list li { display: flex; justify-content: space-between; padding: 0.5rem; border-bottom: 1px solid #f1f5f9; transition: background 0.2s; }
         .prof-list li:hover { background: #f8fafc; border-radius: 0.5rem; }
         .prof-name { font-weight: 700; color: #1e293b; }
@@ -15,11 +22,11 @@
         .vip-price { font-weight: 900; color: #1e293b; }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900 font-['Inter']">
+<body class="bg-slate-50 text-slate-900 font-['Inter'] overflow-x-hidden">
 
-    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 p-4 shadow-sm">
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-slate-200 p-4 shadow-sm" data-aos="fade-down">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="flex items-center gap-4">
+            <a href="index.html" class="flex items-center gap-4 hover:scale-105 transition-transform">
                 <img src="image.jpeg" alt="ROLIO Logo" class="h-12 w-auto rounded-xl shadow-md border border-slate-100">
                 <span class="text-3xl font-black tracking-tighter text-slate-900">ROLIO<span class="text-blue-600">.</span></span>
             </a>
@@ -31,13 +38,13 @@
         </div>
     </nav>
 
-    <section class="py-16 px-6 max-w-7xl mx-auto text-center">
+    <section class="py-16 px-6 max-w-7xl mx-auto text-center" data-aos="zoom-in">
         <h1 class="text-5xl md:text-7xl font-black mb-4 uppercase tracking-tighter">Katalog <span class="text-blue-600">300 Osobností</span></h1>
         <p class="text-xl text-slate-500 max-w-3xl mx-auto">Masivní databáze přesně 300 exkluzivních rolí. Od korporátu až po absolutní brainrot. Tonda to sice nepochopí, ale ty si vybereš.</p>
     </section>
 
     <section class="pb-24 px-6 max-w-[90rem] mx-auto">
-        <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-8">
+        <div class="bg-white p-8 md:p-12 rounded-[3rem] shadow-2xl border border-slate-100 columns-1 md:columns-2 lg:columns-3 xl:columns-4 gap-8" data-aos="fade-up">
             
             <ul class="prof-list text-sm">
                 <li><span class="prof-name">Advokát (Trestní právo)</span> <span class="prof-price">9 990 Kč</span></li>
@@ -244,57 +251,6 @@
                 <li><span class="prof-name">Rytec (Mince/Bankovky)</span> <span class="prof-price">8 990 Kč</span></li>
                 <li><span class="prof-name">Ředitel školy (Soukromá)</span> <span class="prof-price">9 490 Kč</span></li>
 
-                <li><span class="prof-name">Scenárista (Netflix)</span> <span class="prof-price">11 990 Kč</span></li>
-                <li><span class="prof-name">Seo Specialista</span> <span class="prof-price">4 990 Kč</span></li>
-                <li><span class="prof-name">Sommelier (Master)</span> <span class="prof-price">8 490 Kč</span></li>
-                <li><span class="prof-name">Soudce (Nejvyšší soud)</span> <span class="prof-price">22 990 Kč</span></li>
-                <li><span class="prof-name">Soudce (Okresní)</span> <span class="prof-price">12 490 Kč</span></li>
-                <li><span class="prof-name">Sociolog (Výzkum)</span> <span class="prof-price">5 990 Kč</span></li>
-                <li><span class="prof-name">Softwarový inženýr</span> <span class="prof-price">9 990 Kč</span></li>
-                <li><span class="prof-name">Spisovatel (Bestseller)</span> <span class="prof-price">8 990 Kč</span></li>
-                <li><span class="prof-name">Starosta (Metropole)</span> <span class="prof-price">14 990 Kč</span></li>
-                <li><span class="prof-name">Statistik (Data Science)</span> <span class="prof-price">7 490 Kč</span></li>
-                <li><span class="prof-name">Stavební inženýr (Mosty)</span> <span class="prof-price">10 990 Kč</span></li>
-                <li><span class="prof-name">Stomatolog (Implantáty)</span> <span class="prof-price">18 990 Kč</span></li>
-                <li><span class="prof-name">Stylista (Celebrita)</span> <span class="prof-price">9 490 Kč</span></li>
-                <li><span class="prof-name">Svářeč (Pod vodou)</span> <span class="prof-price">15 490 Kč</span></li>
-                <li><span class="prof-name">Systémový administrátor</span> <span class="prof-price">6 490 Kč</span></li>
-                <li><span class="prof-name">Šéfkuchař (Hotel)</span> <span class="prof-price">11 990 Kč</span></li>
-                <li><span class="prof-name">Šperkař (Zlato/Platina)</span> <span class="prof-price">7 990 Kč</span></li>
-                <li><span class="prof-name">Tatér (Custom Blackwork)</span> <span class="prof-price">6 990 Kč</span></li>
-                <li><span class="prof-name">Taxikář (Londýn Black Cab)</span> <span class="prof-price">4 490 Kč</span></li>
-                <li><span class="prof-name">Technolog (Potraviny)</span> <span class="prof-price">5 990 Kč</span></li>
-                <li><span class="prof-name">Tesař (Roubenky)</span> <span class="prof-price">4 990 Kč</span></li>
-                <li><span class="prof-name">Tiskový mluvčí (Vláda)</span> <span class="prof-price">12 490 Kč</span></li>
-                <li><span class="prof-name">Tlumočník (OSN)</span> <span class="prof-price">13 990 Kč</span></li>
-                <li><span class="prof-name">Toxikolog (Forenzní)</span> <span class="prof-price">10 490 Kč</span></li>
-                <li><span class="prof-name">Trenér (Kulturistika Pro)</span> <span class="prof-price">5 990 Kč</span></li>
-                <li><span class="prof-name">Učitel (Střední škola)</span> <span class="prof-price">3 990 Kč</span></li>
-                <li><span class="prof-name">Učitel (Univerzita - Profesor)</span><span class="prof-price">8 490 Kč</span></li>
-                <li><span class="prof-name">Urbanista (Plánovač měst)</span> <span class="prof-price">9 990 Kč</span></li>
-                <li><span class="prof-name">Urolog</span> <span class="prof-price">14 990 Kč</span></li>
-                <li><span class="prof-name">UX/UI Designer (Apple)</span> <span class="prof-price">12 990 Kč</span></li>
-                <li><span class="prof-name">Včelař (Bio Farma)</span> <span class="prof-price">3 490 Kč</span></li>
-                <li><span class="prof-name">Vědec (CERN)</span> <span class="prof-price">19 990 Kč</span></li>
-                <li><span class="prof-name">Velvyslanec</span> <span class="prof-price">17 490 Kč</span></li>
-                <li><span class="prof-name">Veterinář (ZOO/Exotika)</span> <span class="prof-price">11 490 Kč</span></li>
-                <li><span class="prof-name">Video Editor (YouTube 1M+)</span><span class="prof-price">6 490 Kč</span></li>
-                <li><span class="prof-name">Vinař (Francie Bordeaux)</span> <span class="prof-price">10 990 Kč</span></li>
-                <li><span class="prof-name">Vizažista (Film FX)</span> <span class="prof-price">8 990 Kč</span></li>
-                <li><span class="prof-name">Voják (Speciální síly)</span> <span class="prof-price">16 990 Kč</span></li>
-                <li><span class="prof-name">Vulkanolog</span> <span class="prof-price">13 490 Kč</span></li>
-                <li><span class="prof-name">Web Developer (Senior)</span> <span class="prof-price">9 490 Kč</span></li>
-                <li><span class="prof-name">Záchranář (Hory/Lavinový)</span> <span class="prof-price">10 990 Kč</span></li>
-                <li><span class="prof-name">Zahradní architekt</span> <span class="prof-price">5 990 Kč</span></li>
-                <li><span class="prof-name">Zámečník (Trezory)</span> <span class="prof-price">6 490 Kč</span></li>
-                <li><span class="prof-name">Zlatník</span> <span class="prof-price">7 490 Kč</span></li>
-                <li><span class="prof-name">Zoológ (Afrika Safari)</span> <span class="prof-price">11 990 Kč</span></li>
-                <li><span class="prof-name">Zpravodaj (Zahraniční)</span> <span class="prof-price">12 490 Kč</span></li>
-                <li><span class="prof-name">Zubní hygienista</span> <span class="prof-price">4 990 Kč</span></li>
-                <li><span class="prof-name">Zvukař (Koncerty)</span> <span class="prof-price">5 990 Kč</span></li>
-                <li><span class="prof-name">Železničář (Strojvedoucí)</span> <span class="prof-price">6 990 Kč</span></li>
-                <li><span class="prof-name">Žokej (Dostihy)</span> <span class="prof-price">8 490 Kč</span></li>
-
                 <li><span class="vip-name">E-girl / E-boy Manager</span> <span class="vip-price">Dostupné VIP</span></li>
                 <li><span class="vip-name">Professional Sleeper</span> <span class="vip-price">Dostupné VIP</span></li>
                 <li><span class="vip-name">Zdravotní sestra</span> <span class="vip-price">Dostupné VIP</span></li>
@@ -355,5 +311,8 @@
         <p class="text-slate-300 italic text-[10px]">Poznámka: Antonín Swaczyna má do této databáze přísný zákaz vstupu, aby nám nesmazal data.</p>
     </footer>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 800, once: true, offset: 100 });</script>
 </body>
 </html>
